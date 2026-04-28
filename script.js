@@ -1,3 +1,5 @@
+const tokenType = document.getElementById("tokenType");
+const daysInput = document.getElementById("stakingDays");
 const btn = document.getElementById("calcBtn");
 const input = document.getElementById("usdcAmount");
 const display = document.getElementById("yieldResult");
