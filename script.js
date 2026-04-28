@@ -10,3 +10,9 @@ btn.addEventListener("click", function() {
     let yieldEared = (amount * apy * days) / 365;
     display.textContent = yieldEared.toFixed(4);
 });
+const resetBtn = document.getElementById("resetBtn");
+resetBtn.addEventListener("click", function() {
+    input.value = "";
+    daysInput.value = "";
+    display.textContent = "0";
+});
