@@ -8,6 +8,10 @@
 <body>
 <h1>Base Yield Calculator 🔵</h1>
     <p>คำนวณผลตอบแทน APY ที่ 10% สำหรับเหรียญ USDC</p>
+    <select id="tokenType">
+        <option value="USDC">USDC (APY 10%)</option>
+        <option value="cbBTC">cbBTC (APY 5%)</option>
+    </select>
     <input type="number" id="usdcAmount" placeholder="ใส่จำนวน USDC">
     <button id="calcBtn">คำนวณ Yield</button>
     <p>ผลตอบแทนต่อปี: <span id="yieldResult">0</span> USDC</p>
