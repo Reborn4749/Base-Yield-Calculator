@@ -6,7 +6,7 @@ const display = document.getElementById("yieldResult");
 btn.addEventListener("click", function() {
     let amount = input.value;
     let apy = tokenType.value === "USDC" ? 0.10 : 0.05;
-    let days = daysInput.value || 365; // ถ้าไม่ใส่วัน ให้คิดเป็น 1 ปี (365)
+    let days = daysInput.value || 365;
     let yieldEared = (amount * apy * days) / 365;
-    display.textContent = yieldEared;
+    display.textContent = yieldEared.toFixed(4);
 });
